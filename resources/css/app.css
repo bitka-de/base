@@ -9,3 +9,24 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+
+@layer utilities {
+    .boxed {
+        @apply w-full max-w-7xl mx-auto py-4 px-4 relative;
+    }
+    .flex-center {
+        @apply flex items-center justify-center;
+    }
+    .flex-between{
+        @apply flex items-center justify-between;
+    }
+}
+
+@layer base {
+
+    .clip1{
+        position: relative;
+        clip-path: polygon(100% 0, 100% calc( 100% - 3rem), 50% 100%, 0 calc( 100% - 3rem), 0 0);
+    }
+}
